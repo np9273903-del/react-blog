@@ -8,6 +8,7 @@ import Lecture18 from "./Lecture18";
 import User from "./lecture19User.jsx"
 import College from "./College.jsx"
 import Student from "./student.jsx"
+import Pratice1 from "./pratice.jsx"
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -44,6 +45,9 @@ function App(){
    return (
      
       <div>
+
+       <Pratice1/>
+
        {/* <College name={arr}/>  */}
        <Student name={Student1}/>
        <button onClick={change}>student button</button>
