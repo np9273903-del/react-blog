@@ -24,16 +24,32 @@ function Pratice1(){
     function change(){
     newanimal("DOG");
 }
+  let [display,setdisplay]=useState("false");
+  function Fun(){
+    setdisplay(true);
+  }
+    let age=19;
+    const [status, setStatus] = useState(false);
     return(
         <div>
+     <h1>{status ? "ON" : "OFF"}</h1>
+
+      <button onClick={() => setStatus(!status)}>
+        Toggle
+      </button>
+    </div>
+
+            
+        // {age<18?<h1>child</h1>:<h1>mature</h1>}
+        //  <h1>name:{animal}</h1>
+        //  <button onClick={change}>onclickanimal</button>
+        //  {display?<h1>working</h1>:null}
+         
         
-         <h1>name:{animal}</h1>
-         <button onClick={change}>onclickanimal</button>
-        
-           
-         </div>
 
     )
 }
+
+
 
 export default Pratice1;

@@ -1,0 +1,9 @@
+example to understand
+
+function App() {
+  let isLoggedIn = true;
+
+  return (
+    <h1>{isLoggedIn ? "Welcome User" : "Please Login"}</h1>
+  );
+}
