@@ -51,5 +51,14 @@ function Pratice1(){
 }
 
 
+export function Pratice2({User}){
+    return(
+      <div>
+        <h1>{User.name}</h1>
+       <h1>{User.email}</h1>
+      </div>
+    )
+}
+
 
 export default Pratice1;

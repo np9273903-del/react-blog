@@ -9,6 +9,10 @@ import User from "./lecture19User.jsx"
 import College from "./College.jsx"
 import Student from "./student.jsx"
 import Pratice1 from "./pratice.jsx"
+import {Pratice2} from "./pratice.jsx"
+import Use from "./Lecture20.jsx"
+import Wrapper1 from "./Wrapper.jsx"
+import Lecture21 from "./Lecture21.jsx";
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -37,16 +41,35 @@ function App(){
     name:"shubhada",
     age:24,
    }
+
+   let Studentdata={
+    name:"Nikhil",
+    age:23,
+    email:"np9273903@gmail.com",
+   }
    let arr=['one','two','three','four','five'];
    let [Student1,newname]=useState("sam");
     function change(){
          newname("nikhil");
    } 
    return (
-     
+      
       <div>
-
-       <Pratice1/>
+           <Lecture21 />
+        <Wrapper1 color="orange">
+          <h1>HELLO</h1>
+        </Wrapper1>
+         <Wrapper1 color="blue">
+          <h1>MELLO</h1>
+          <h1 style={{
+            color:"red",
+          }}>nikhil</h1>
+        </Wrapper1>
+        <Use />
+        <Use name="nikhil"/>
+       <Pratice2 User={Studentdata} />
+       {/* <Pratice2 name="nikhil"/> */}
+       {/* <Pratice1/> */}
 
        {/* <College name={arr}/>  */}
        <Student name={Student1}/>
