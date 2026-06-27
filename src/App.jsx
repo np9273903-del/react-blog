@@ -13,6 +13,9 @@ import {Pratice2} from "./pratice.jsx"
 import Use from "./Lecture20.jsx"
 import Wrapper1 from "./Wrapper.jsx"
 import Lecture21 from "./Lecture21.jsx";
+import Checkboxes from "./checkbox23.jsx"
+import YouBox  from "./project.jsx";
+import {Color1} from "./pratice.jsx"
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -52,9 +55,34 @@ function App(){
     function change(){
          newname("nikhil");
    } 
+   const [currname,newn]=useState("");
+  function S(event){
+      newn(event.target.value);
+   }
    return (
       
       <div>
+
+      <input 
+      value={currname}
+      style={{
+        height:"50px",
+        width:"100px",
+        border:"2px solid black",
+      }} 
+      onChange={S}
+      type="text" placeholder="enter the name"/>
+       {currname}
+        <Color1/>
+        {/* <h1 style={{
+          color:"red",
+          height:"100px",
+          width:"100px",
+        }}>
+        Hello
+        </h1> */}
+         {/* <YouBox/> */}
+          <Checkboxes/>
            <Lecture21 />
         <Wrapper1 color="orange">
           <h1>HELLO</h1>

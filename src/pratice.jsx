@@ -1,5 +1,5 @@
 //importing states
-import {useState} from "react";
+import {Children, useState} from "react";
 
 
 function Add(a,b){
@@ -60,5 +60,17 @@ export function Pratice2({User}){
     )
 }
 
+
+export function Color1({children}){
+  return(   
+    <div>
+  <h1 style={{
+    color:"blue"
+  }}>hello</h1>
+  {children}
+    </div>
+  )
+ 
+}
 
 export default Pratice1;
