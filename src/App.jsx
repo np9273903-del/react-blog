@@ -59,9 +59,34 @@ function App(){
   function S(event){
       newn(event.target.value);
    }
+   const [gender,setgender]=useState('female');
+   function radi(event){
+     setgender(event.target.value);
+   }
+   const [city,selected]=useState('delhi');
+   function selection(event){
+       selected(event.target.value);
+   }
    return (
       
       <div>
+        <h1>Handle radio and dropdown</h1>
+        <input type="radio" onChange={radi} name="gender" value="male" id="male"/>
+        <label htmlFor="male">Male</label>
+        <input type="radio" onChange={radi}  name="gender" value="female" id="female"/>
+        <label htmlFor="female">female</label>   
+          <h2>Selected Gender:{gender}</h2>
+          <Checkboxes/>
+        
+        <br>
+        </br>
+
+        <select onChange={selection} defaultValue={"delhi"}>
+          <option value="noida">Noida</option>
+          <option vallue="gurgaon">Gurgaon</option>
+          <option value="delhi">delhi</option>
+         </select>
+        <h2>Selected city:{city}</h2>
 
       <input 
       value={currname}
@@ -82,7 +107,7 @@ function App(){
         Hello
         </h1> */}
          {/* <YouBox/> */}
-          <Checkboxes/>
+      
            <Lecture21 />
         <Wrapper1 color="orange">
           <h1>HELLO</h1>
