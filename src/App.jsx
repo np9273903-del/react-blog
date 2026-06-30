@@ -16,6 +16,8 @@ import Lecture21 from "./Lecture21.jsx";
 import Checkboxes from "./checkbox23.jsx"
 import YouBox  from "./project.jsx";
 import {Color1} from "./pratice.jsx"
+import Loops from "./loops.jsx"
+import Clock from "./clock.jsx"
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -67,9 +69,22 @@ function App(){
    function selection(event){
        selected(event.target.value);
    }
+   const [color,changecolor]=useState("red")
+   function change(event){
+    changecolor(event.target.value)
+   }
+   
    return (
       
       <div>
+        <select onChange={change}>
+          <option value={"red"}>red</option>
+          <option value={"blue"}>blue</option>
+          <option value={"green"}>green</option>
+          <option value={"orange"}>orange</option>
+        </select>
+        <Clock color={color}/>
+        <Loops/>
         <h1>Handle radio and dropdown</h1>
         <input type="radio" onChange={radi} name="gender" value="male" id="male"/>
         <label htmlFor="male">Male</label>
