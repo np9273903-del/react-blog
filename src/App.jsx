@@ -18,6 +18,8 @@ import YouBox  from "./project.jsx";
 import {Color1} from "./pratice.jsx"
 import Loops from "./loops.jsx"
 import Clock from "./clock.jsx"
+import Comp from "./Comp.jsx"
+import {Jsx} from "./pratice.jsx"
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -77,6 +79,9 @@ function App(){
    return (
       
       <div>
+        <Jsx/>
+        <Project/>
+        <Comp/>
         <select onChange={change}>
           <option value={"red"}>red</option>
           <option value={"blue"}>blue</option>

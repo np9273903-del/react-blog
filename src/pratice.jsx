@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 //importing states
 import {Children, useState} from "react";
 
@@ -16,10 +24,38 @@ let Student={
 
 let fruits=['apple','mango','banana','jackfruit'];
 
+let arr=['nikhil','patil','purva','dattu','dilip']
+function sum(a,b){
+  return a+b;
+}
+const login=false;
+export function Jsx(){
+     return(
+      <div>
+        <h1>{arr[0]}</h1>
+        <h1>{arr[1]}</h1>
+        <h1>{sum(1,2)}
+         
+        </h1>
+         <h1>{login?"welcome":"failed"}</h1>
+      </div>
+     )
+}
+
+
+
 
 
 function Pratice1(){
-    let value="nikhil";
+   
+  
+    
+  
+  
+  
+  
+  
+  let value="nikhil";
     let [animal,newanimal]=useState("TIGER");
     function change(){
     newanimal("DOG");
