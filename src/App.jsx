@@ -3,7 +3,6 @@ import First,{First1,Name} from "./Components"
 import Project from "./jsxa"
 import Lecture13 from "./Lecture13"
 import {useState} from "react";
-import Count from "./counter";
 import Lecture18 from "./Lecture18";
 import User from "./lecture19User.jsx"
 import College from "./College.jsx"
@@ -20,8 +19,9 @@ import Loops from "./loops.jsx"
 import Clock from "./clock.jsx"
 import Comp from "./Comp.jsx"
 import {Jsx} from "./pratice.jsx"
-import "./App.css";
-import "./index.css";
+import {UseEffect} from "./useEffect.jsx"
+
+import CounterDisplay from "./CounterDisplay.jsx";
 function App(){
 
    const [fruit,setfruit] =useState("apple");
@@ -77,10 +77,17 @@ function App(){
    function change(event){
     changecolor(event.target.value)
    }
-   
+   const [a,b]=useState(0);
+   function props(){
+       b(a+1);
+   }
    return (
       
       <div>
+       
+        <CounterDisplay aa={a}/>
+        <button onClick={props}>hello{a}</button>
+        <UseEffect/>
         <h1 id="nik">hello i am nikhil</h1>
         <Jsx/>
         <Project/>
