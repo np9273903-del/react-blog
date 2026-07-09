@@ -7,3 +7,22 @@ function App() {
     <h1>{isLoggedIn ? "Welcome User" : "Please Login"}</h1>
   );
 }
+
+
+import { useState } from "react";
+
+function App() {
+  const [on, setOn] = useState(false);
+
+  return (
+    <div>
+      <h1>{on ? "ON" : "OFF"}</h1>
+
+      <button onClick={() => setOn(!on)}>
+        Toggle
+      </button>
+    </div>
+  );
+}
+
+export default App;

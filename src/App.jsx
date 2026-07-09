@@ -20,6 +20,7 @@ import Clock from "./clock.jsx"
 import Comp from "./Comp.jsx"
 import {Jsx} from "./pratice.jsx"
 import {UseEffect} from "./useEffect.jsx"
+import {JulyNine} from "./pratice.jsx";
 
 import CounterDisplay from "./CounterDisplay.jsx";
 function App(){
@@ -84,7 +85,75 @@ function App(){
    return (
       
       <div>
-       
+
+        <JulyNine/>
+        <div
+        
+  style={{
+    display: "flex",
+    gap: "20px",
+  }}
+>
+  {/* Card 1 */}
+  <div
+    style={{
+      border: "5px solid black",
+      height: "300px",
+      width: "200px",
+    }}
+  >
+    <img
+      src="https://images.unsplash.com/photo-1579762593217-46655e4e7efc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+      alt=""
+      style={{
+        width: "200px",
+        height: "200px",
+      }}
+    />
+    <h5>Lionel Messi</h5>
+    <h5>Teacher</h5>
+  </div>
+
+  {/* Card 2 */}
+  <div
+    style={{
+      border: "5px solid black",
+      height: "300px",
+      width: "200px",
+    }}
+  >
+    <img
+      src="https://images.unsplash.com/photo-1579762593217-46655e4e7efc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+      alt=""
+      style={{
+        width: "200px",
+        height: "200px",
+      }}
+    />
+    <h5>Lionel Messi</h5>
+    <h5>Teacher</h5>
+  </div>
+
+  {/* Card 3 */}
+  <div
+    style={{
+      border: "5px solid black",
+      height: "300px",
+      width: "200px",
+    }}
+  >
+    <img
+      src="https://images.unsplash.com/photo-1579762593217-46655e4e7efc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+      alt=""
+      style={{
+        width: "200px",
+        height: "200px",
+      }}
+    />
+    <h5>Lionel Messi</h5>
+    <h5>Teacher</h5>
+  </div>
+</div>
         <CounterDisplay aa={a}/>
         <button onClick={props}>hello{a}</button>
         <UseEffect/>

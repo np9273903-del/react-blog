@@ -110,3 +110,63 @@ export function Color1({children}){
 }
 
 export default Pratice1;
+
+const obj={
+    Name:"nikhil",
+    age:13,
+    email:"np9273903@gmail.com"
+  }
+
+
+export function JulyNine(){
+  function alu(){
+    console.log("clicked");
+    
+  }
+  function sum(a,b){
+return a+b;
+  }
+  const [sarthak,newsarthak]=useState("chutiya");
+  function mustufa(){
+    newsarthak(sarthak);
+  }
+    const [z,newz]=useState("0");
+    const [on, setOn] = useState(false);
+    const[login,islogin]=useState(0);
+  return(
+    <div>
+      <h1>{login?"logged sucess":"login failed"}</h1>
+      <button onClick={()=>{
+        islogin(!login);
+      }}>States</button>
+
+      {
+        login===0?<h1>login {login}</h1>
+        :login===1?<h1>LOGIN {login}</h1>
+        : <h1>Invalid</h1>     
+      }
+      <h1>{on ? "ON" : "OFF"}</h1>
+
+      <button onClick={() => setOn(!on)}>
+        Toggle
+      </button>
+    
+      
+
+      <h1>hello</h1>
+      <li>
+        hello 1
+      </li>
+      <li>
+        hello 2
+      </li>
+      <h1>{sum(1,3)}</h1>
+      <h1>Name</h1>
+      <h1>{obj.Name}</h1>
+    <button onClick={mustufa}>Phone</button>
+     <h1>{sarthak}</h1> 
+      <button onClick={alu}>click</button>
+    </div>
+  )
+}
+
